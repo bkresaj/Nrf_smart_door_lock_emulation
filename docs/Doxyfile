@@ -1,0 +1,46 @@
+# Doxyfile for My Project
+
+# Project settings
+PROJECT_NAME           = "Nrf52840 smart door lock"
+PROJECT_NUMBER         =
+OUTPUT_DIRECTORY       = docs/
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = English
+
+# Source code directory
+INPUT                  = smart_door_lock README.md
+RECURSIVE              = YES
+
+# File patterns to include
+FILE_PATTERNS           = *.c *.h
+
+# Excluded directories and files
+EXCLUDE                = smart_door_lock/build zephyr/
+
+# HTML output settings
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_TIMESTAMP         = NO
+GENERATE_TREEVIEW      = YES
+
+# Tag files (for cross-referencing)
+#GENERATE_TAGFILE       = Nrf52840.tag
+
+# Enable some extra features
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# Examples
+EXAMPLES_DIRECTORY     = ./examples
+EXAMPLES_PATTERN       = *
+
+# Miscellaneous
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+HIDE_SCOPE_NAMES       = NO
+SHOW_INCLUDE_FILES     = YES
+INLINE_INFO            = YES
+SORT_MEMBER_DOCS       = YES
+GENERATE_LATEX         = NO

@@ -1,0 +1,5 @@
+add_subdirectory(board)
+add_subdirectory(example)
+add_subdirectory(littlefs_file_system)
+add_subdirectory(nfc)
+add_subdirectory(nvs_file_system)
